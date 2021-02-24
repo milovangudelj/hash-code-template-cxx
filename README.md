@@ -1,2 +1,2 @@
-# hash-code-template-cxx
- Template Repository for Hash Code competition in C++
+# Hash Code template repository
+Contains a basic file structure to jump start the project
