@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-	head(argc, argv, "Hash Code 2018 - Qualification Round"); // Prints the title / usage info
+	head(argc, argv, "Hash Code Template"); // Prints the title / usage info
 
 	string path = argv[1]; // Path to input file specified from prompt
 
