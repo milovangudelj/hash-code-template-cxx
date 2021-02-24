@@ -6,20 +6,20 @@ Compile using `g++ main.cpp`
 
 ## Contents
 
--  _main.cpp_\
+-  **main.cpp**  
    Contains the general order of execution of all the different functions
 
--  _io.h_\
+-  **io.h**  
    Contains all the functions responsible of reading and writing data to and from a file
 
--  _classes.h_\
+-  **classes.h**  
    Contains a basic skeleton of a couple of classes easily modifiable to suit your needs
 
--  _functions.h_\
+-  **functions.h**  
    Contains all the fun stuff... Algorithms for solving the problem given. It also has a couple of generic functions for output head and data printing
 
--  _Input_\
+-  **Input**  
    You should put all input files in here
 
--  _Output_\
+-  **Output**  
    Output files will end up here
