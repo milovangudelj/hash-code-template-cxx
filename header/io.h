@@ -10,7 +10,13 @@
 
 using namespace std;
 
-vector<string> tokenize(string &s);
+vector<string> tokenize(string &s)
+{
+	istringstream iss(s);
+	vector<string> tokens{istream_iterator<string>{iss}, istream_iterator<string>{}};
+
+	return tokens;
+}
 
 vector<vector<string>> parse_data(string &path)
 {
@@ -39,12 +45,14 @@ vector<vector<string>> parse_data(string &path)
 	return data;
 }
 
-vector<string> tokenize(string &s)
+vector<int> count(int b, int t) // form index "b" return "t" number of elements
 {
-	istringstream iss(s);
-	vector<string> tokens{istream_iterator<string>{iss}, istream_iterator<string>{}};
-
-	return tokens;
+	vector<int> out;
+	for (int i = 0; i < t; i++)
+	{
+		out.push_back(i + b);
+	}
+	return out;
 }
 
 void init_data(vector<string> &data)
@@ -58,14 +66,13 @@ void init_data(vector<string> &data)
 
 void print_results(char t)
 {
-	string o = "ciao";
-	int sgnd_libs = 0;
+	string o = "";
 
-	// Append relevant data from a data structure
+	// Append relevant data from a data structure to output string "o"
 
-	ofstream output;
 	string filename = "Output\\" + string(1, t) + "_output_data";
-	output.open(filename.c_str());
+	ofstream output(filename);
+
 	if (output.is_open())
 	{
 		output << o;

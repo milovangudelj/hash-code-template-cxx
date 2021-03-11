@@ -2,7 +2,7 @@
 
 A basic file structure to jump start the project
 
-Compile using `g++ main.cpp`
+Compile using `g++ src/*.cpp fmt/*.cc -Ic:/headers` or `make`
 
 ## Contents
 

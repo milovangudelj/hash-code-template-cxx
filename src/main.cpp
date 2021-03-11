@@ -1,10 +1,8 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include "colors.h"
-#include "io.h"
-#include "functions.h"
-#include "classes.h"
+#include "../header/includes.h"
+#include "../header/utility.h"
+#include "../header/io.h"
+#include "../header/functions.h"
+// #include "../header/your_class_here.h"
 
 using namespace std;
 
@@ -18,11 +16,7 @@ int main(int argc, char *argv[])
 
 	print_data(data);
 
-	start();
-
-	printf("The score is: %9d points\n\n", score());
-
-	print_results(path.at(6));
+	// print_results(path.at(6));
 
 	system("pause");
 	return 0;
