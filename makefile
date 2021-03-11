@@ -3,4 +3,4 @@ HEADERS = -Ic:/headers
 all: a.exe
 
 a.exe: src/*.cpp fmt/*.cc
-	g++ *.cpp *.cc %(HEADERS)
+	g++ src/*.cpp fmt/*.cc $(HEADERS)
