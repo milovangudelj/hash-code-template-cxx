@@ -1,6 +1,19 @@
 HEADERS = -Ic:/headers
+LIBS = fmt/*.cc
+SRC = src/*.cpp
 
-all: a.exe
+# Detect operating system
 
-a.exe: src/*.cpp fmt/*.cc
-	g++ src/*.cpp fmt/*.cc $(HEADERS)
+EXECUTABLE 				:=
+ifeq ($(OS), Windows_NT)
+	EXECUTABLE = a.exe
+else
+	EXECUTABLE = a.out
+endif
+
+# Build
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SRC) $(LIBS)
+	g++ $(SRC) $(LIBS) $(HEADERS)
