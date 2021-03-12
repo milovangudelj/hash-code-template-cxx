@@ -14,11 +14,13 @@ If you installed the compiler through Mingw-w64 you can use make typing `mingw32
 
 ## Contents
 
--  **src**
+-  **src**  
    .cpp files
--  **header**
+   
+-  **header**  
    .h files
--  **fmt**
+   
+-  **fmt**  
    Format library by Victor Zverovich and Jonathan Müller. [Check it out.](https://github.com/fmtlib/fmt)
 
 -  **main.cpp**  
@@ -30,7 +32,7 @@ If you installed the compiler through Mingw-w64 you can use make typing `mingw32
 -  **functions.h**  
    Contains all the fun stuff... Algorithms for solving the problem given.
 
--  **utility.h**
+-  **utility.h**  
    Mainly title and data printing
 
 -  **Input**  
